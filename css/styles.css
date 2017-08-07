@@ -1,0 +1,31 @@
+img {
+  display: block;
+  width: 45vw;
+  height: 25% !important;
+  margin: 0 auto;
+}
+
+body {
+  background: rgb(193, 193, 193);
+}
+
+h1 {
+  text-align: center;
+}
+
+/*.carousel-fade .carousel-item.active {
+  transition: opacity .9s ease-in-out;
+  opacity: 1;
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+}*/
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
