@@ -40,9 +40,9 @@ function slideShow (apod) {
     $(`#image${i}`).attr("src", `https://api.nasa.gov/EPIC/archive/natural/${newerImage}/png/${apod[i].image}.png?api_key=${nasaapiKey}`)
   }
 }
-// $('#carouselExampleControls').on("slide.bs.carousel", function(){
-//
-// })
+$('#carouselExampleControls').on("slide.bs.carousel", function(){
+  $('.carousel-inner').fadeOut(5000).fadeIn();
+})
 
 // $('.carousel').carousel({
 //   interval: 4000
@@ -54,15 +54,15 @@ function slideShow (apod) {
 // $(previous).fadeOut(500);
 // $(next).fadeIn(500);
 
-let activeImg = $('.carousel-inner').children('.carousel-item');
-console.log(activeImg);
-$(activeImg).on('change', function () {
-  if ($('.carousel-item').hasClass("active")) {
-    console.log(this);
-    $(this).removeClass("hidden")
-    $(this).addClass("visible")
-  } else {
-    $(this).removeClass("visible")
-    $(this).addClass("hidden")
-  }
-})
+// let activeImg = $('.carousel-inner').children('.carousel-item');
+// console.log(activeImg);
+// $(activeImg).on('change', function () {
+//   if ($('.carousel-item').hasClass("active")) {
+//     console.log(this);
+//     $(this).removeClass("hidden")
+//     $(this).addClass("visible")
+//   } else {
+//     $(this).removeClass("visible")
+//     $(this).addClass("hidden")
+//   }
+// })
